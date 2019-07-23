@@ -1,0 +1,7 @@
+.header {
+  background: #f8f8f8;
+}
+
+.uk-navbar-nav > li > a, .uk-navbar-item{
+  min-height: 7vh !important;
+}

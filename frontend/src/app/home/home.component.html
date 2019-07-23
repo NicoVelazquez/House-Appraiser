@@ -1,0 +1,35 @@
+<div class="first-container uk-width1-1 uk-flex uk-flex-center">
+
+  <div class="title-input-container uk-width-1-2">
+
+    <h4 class="uk-text-center">¿Cuánto vale tu propiedad?</h4>
+    <h5 class="uk-text-center" style="margin: 0">Ingresá algunos datos básicos y enterate, ¡en segundos!</h5>
+
+    <form [formGroup]="countryForm">
+      <div class="input-button-container uk-grid-collapse" uk-grid>
+        <div class="input-container" style="width: 80%">
+          <input class="input uk-input" id="country" formControlName="name" type="text" autocomplete="off"
+                 placeholder="Ingrese su barrio">
+          <div class="countries" (pointerleave)="closeDropdown()">
+            <div class="dropdown">
+              <ul class="uk-list">
+                <li *ngFor="let c of filteredCountries" (click)="setCountry(c)"><a>{{c.name}}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="button-container" style="width: 20%">
+          <button class="button uk-button uk-button-primary" type="button" [disabled]="!enableButton" (click)="continue()">Continuar</button>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<div class="second-container uk-width-1-1" style="background: grey">
+
+</div>

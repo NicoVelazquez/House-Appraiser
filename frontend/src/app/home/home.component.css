@@ -1,0 +1,46 @@
+.first-container {
+  height: 53vh;
+  background: url("../../assets/house.jpg");
+  /*background-size: 100% 100%;*/
+}
+
+.title-input-container {
+  margin-top: 10%;
+}
+
+.second-container {
+  height: 40vh;
+}
+
+.input {
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.button {
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.dropdown {
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: white;
+  max-width: 250px;
+  -webkit-box-shadow: 2px 7px 53px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 7px 53px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 7px 53px -20px rgba(0, 0, 0, 0.75);
+}
+
+.dropdown ul {
+  margin: 0;
+}
+
+.dropdown li:hover {
+  background-color: whitesmoke;
+}
+
+.dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
